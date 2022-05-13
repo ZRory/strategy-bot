@@ -1,0 +1,58 @@
+server:
+  port: 18888
+  servlet:
+    context-path: /api
+ding-talk:
+  url: https://oapi.dingtalk.com
+binance:
+  #手续费：0.04%
+  serviceAmountRate: 0.0004
+  url: https://fapi.binance.com
+#http代理配置
+global-config:
+  enable-proxy: true
+  proxy-host: 127.0.0.1
+  proxy-port: 12333
+#数据库配置
+mybatis-plus:
+  mapper-locations: classpath:/mybatis/*.xml
+  typeAliasesPackage: net.chiaai.bot.entity.dao
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: deleted_flag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    jdbc-type-for-null: 'NULL'
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/strategy_bot?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: Set Your Password here
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      shutdown-timeout: 500
+logging:
+  level:
+    net.chiaai: debug
+    net.chiaai.bot.mapper: info
+  file:
+    name: ./log/strategy-bot.log
+feign:
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+#  client:
+#    config:
+#      binance-service:
+#        loggerLevel: FULL
