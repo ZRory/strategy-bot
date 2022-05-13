@@ -4,6 +4,9 @@
 
 前端代码：https://github.com/ZRory/strategy-bot-web
 
+需要环境：java8, mysql，redis
+
+
 使用步骤： （必须能链接到BINANCE API才能使用本机器人，局域网代理见yml配置）
 
 
