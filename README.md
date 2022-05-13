@@ -1,6 +1,6 @@
 # strategy-bot
 
-币安合约网格套利机器人
+币安合约网格套利机器人  定制化需求或者开发可加v：lucky_zht
 
 前端代码：https://github.com/ZRory/strategy-bot-web
 
