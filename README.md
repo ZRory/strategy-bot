@@ -4,6 +4,8 @@
 
 [定制化需求或者开发可加v：lucky_zht]
 
+测试地址：https://52quant.net/
+
 
 前端代码：https://github.com/ZRory/strategy-bot-web
 
